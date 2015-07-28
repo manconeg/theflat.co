@@ -1,51 +1,73 @@
-/* Parallax base styles
---------------------------------------------- */
-
-.parallax {
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-}
-
-.parallax__group {
+body {
     position: relative;
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    margin: 0;
+    background-color: black;
 }
-
-.parallax__layer {
+.main {
+    width: 100%;
+}
+#page {
+    position: absolute;
+    top: 9em;
+    right: 1em;
+    margin-left: 1em;
+    min-width: 80%;
+    background-image: url("resources/transparency.png");
+    color: white;
+    text-align: right;
+}
+nav {
+    background-color: black;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
 }
-
-body, html {
+#nav {
+    list-style: none;
+    display: flex;
+}
+#nav .link {
+    flex: 1;
+    text-align: center;
+    font-size: 3em;
+    display: inline;
+}
+#nav > li a {
+    text-decoration: none;
+    color: white;
+}
+#content {
+}
+#map {
+    width: 100%;
+    height: 50%;
+}
+#menu ul {
+    list-style: none;
+    font-family: sans-serif;
+}
+#header {
+    height: 200px;
     overflow: hidden;
 }
-
-body {
-    font: 100% / 1.5 Arial;
+#logo {
+    flex: 3;
 }
-
-* {
-    margin:0;
-    padding:0;
+#logo img {
+    width: 100%;
+    margin-top: 4em;
+    height: auto;
 }
-
-.parallax {
-    font-size: 200%;
+.price {
+    margin-left: 1em;
 }
-
-/*
-transform: translateY(.63em) translateZ(1em) scale(0.895);
-transform: translateY(.43em) translateZ(2em) scale(0.786);
-transform: translateY(-0.65em) translateZ(3em) scale(0.68);
-transform: translateY(-2.555em) translateZ(4em) scale(0.5735);
-*/
+.ingredients:before {
+    content: "»";
+    margin-right: 6px;
+}
+address p {
+    text-align: center;
+}
+.page {
+    margin: 1em;
+}
