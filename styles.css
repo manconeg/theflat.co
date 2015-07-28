@@ -1,0 +1,51 @@
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body, html {
+    overflow: hidden;
+}
+
+body {
+    font: 100% / 1.5 Arial;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.parallax {
+    font-size: 200%;
+}
+
+/*
+transform: translateY(.63em) translateZ(1em) scale(0.895);
+transform: translateY(.43em) translateZ(2em) scale(0.786);
+transform: translateY(-0.65em) translateZ(3em) scale(0.68);
+transform: translateY(-2.555em) translateZ(4em) scale(0.5735);
+*/

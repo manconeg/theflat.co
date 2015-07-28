@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <style>
+            body {
+                position: relative;
+                margin: 0;
+            }
+            .main {
+                width: 100%;
+            }
+            #page {
+                position: absolute;
+                top: 9em;
+                right: 1em;
+                bottom: 1em;
+                margin-left: 1em;
+                min-width: 50%;
+                background-image: url("resources/transparency.png");
+                color: white;
+                text-align: right;
+            }
+            nav {
+                background-color: black;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            #nav {
+                list-style: none;
+                display: flex;
+            }
+            #nav .link {
+                flex: 1;
+                text-align: center;
+                font-size: 3em;
+                display: inline;
+            }
+            #nav > li a {
+                text-decoration: none;
+                color: white;
+            }
+            #content {
+            }
+            #map {
+                width: 100%;
+                height: 50%;
+            }
+            #menu ul {
+                list-style: none;
+            }
+            #header {
+                height: 200px;
+                overflow: hidden;
+            }
+            #logo {
+                flex: 3;
+            }
+            #logo img {
+                height: 100%;
+            }
+            .price {
+                margin-left: 1em;
+            }
+            .ingredients:before {
+                content: "»";
+                margin-right: 6px;
+            }
+            address p {
+                text-align: center;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            function show(toShow) {
+                $('.page').hide();
+                $('#' + toShow).show();
+            }
+        </script>
+    </head>
+    <body>
+<!--
+        <div id="header">
+            <img class="main" src="resources/side.jpg" />
+        </div>
+-->
+            <nav>
+                <ul id="nav">
+                    <li id="logo"><img src="resources/pics/logo_bg.png" /></li>
+                    <li class="link"><a href="#" onclick="show('menu')">menu</a></li>
+                    <li class="link"><a href="#" onclick="show('about')">find us</a></li>
+                </ul>
+            </nav>
+        <div id="page">
+            <div id="content">
+                <div id="about" class="page" style="display: none;">
+                    <iframe id="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=111%20East%20Water%20St%2C%20%23A%20Charlottesville%2C%20VA&key=AIzaSyCzs9jAXndOTPMep1uAVEieuB9RtZnY0jE" allowfullscreen></iframe>
+                    <address>
+                        <p>111 E Water St, #A</p>
+                        <p>Charlottesville, VA 22902</p>
+                        <p>Telephone: (434) 978-3528</p>
+                        <p>*Located behind The Jefferson Theater</p>
+                    </address>
+                    <p><time itemprop="openingHours" datetime="Tu-Th 11:00-19:00">Tues-Thurs 11a.m-7p.m.</time></p>
+                    <p><time itemprop="openingHours" datetime="Fr 11:00-00:00">Fri 11a.m.-Midnight.</time></p>
+                    <p><time itemprop="openingHours" datetime="Sa 08:00-00:00">Sat 8a.m.-Midnight</time></p>
+                    <p><time itemprop="openingHours" datetime="Su 11:00-14:00">Sun 11a.m.-2p.m.</time></p>
+                </div>
+                <div id="menu" class="page">
+                    <h1>Breakfast</h1>
+                    <ul>
+                        <li>Greene Eggs <span class="ingredients">Egg, Feta & Veg</span><span class="price">9</span></li>
+                        <li>Hangover Relief <span class="ingredients">Local Ham, Egg & Cheese</span><span class="price">8.5</span></li>
+                    </ul>
+                    <h1>Delicious Desserts</h1>
+                    <ul>
+                        <li>Mama's Apple Pie <span class="ingredients">Vanilla, Butter, Sugar, Apples & Cinnamon</span><span class="price">5</span></li>
+                        <li>Crepe Suzette <span class="ingredients">Butter, Sugar & Grand Marnier</span><span class="price">4</span></li>
+                        <li>Crepe Sucre <span class="ingredients">Sugar, Butter & Cinnamon</span><span class="price">3</span></li>
+                        <li>Crepe Sucre <span class="ingredients">Sugar & Lemon</span><span class="price">3</span></li>
+                        <li>Chocolage Delights<span class="ingredients">Nutella, Milk & Dark or White Chocolate/Add Apples, Ba nanas or Strawberries +1.5</span><span class="price">4/5.5</span></li>
+                        <li>Chocolage Chip Cookie Crepe<span class="ingredients">Butter, Brown Sugar, Vanilla & Milk Chocolate</span><span class="price">5</span></li>
+                    </ul>
+                    <h1>All Day</h1>
+                    <ul>
+                        <li>The Prince of Denmark <span class="ingredients">Ham, Spinach, Honey Mustard, Brie</span><span class="price">9.5</span></li>
+                        <li>Southside of Heaven <span class="ingredients">Chicken, Spinach, Onion, Feta, Cheddar</span><span class="price">8.5</span></li>
+                        <li>Return of the Kind <span class="ingredients">Chicken, Avocado, Feta</span><span class="price">6</span></li>
+                        <li>Crepes According to Anna <span class="ingredients">Local Jam with Brie/Add chicken or local ham +3</span><span class="price">5/8</span></li>
+                        <li>Tofull <span class="ingredients">Local Tofu, Veggies (Vegan!)</span><span class="price">7.5</span></li>
+                        <li>Epic Veg <span class="ingredients">Fresh Veggies & Cheese</span><span class="price">7.5</span></li>
+                        <li>Temptation of Adam <span class="ingredients">Apple & Brie/Add chicken or ham +1</span><span class="price">5.5/6.5</span></li>
+                    </ul>
+                    <h1>Drinks</h1>
+                    <ul>
+                        <li>Sweet & Unsweet Iced Tea, Lemonade & Bottled Water</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
