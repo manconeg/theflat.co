@@ -2,6 +2,7 @@ body {
     position: relative;
     margin: 0;
     background-color: black;
+    color: white;
 }
 .main {
     width: 100%;
