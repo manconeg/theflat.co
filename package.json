@@ -1,0 +1,26 @@
+{
+  "name": "theflat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manconeg/theflat.co.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manconeg/theflat.co/issues"
+  },
+  "homepage": "https://github.com/manconeg/theflat.co#readme"
+}
