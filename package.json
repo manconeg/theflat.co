@@ -1,17 +1,24 @@
 {
   "name": "theflat",
   "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "debug": "~2.1.1",
+    "express": "~4.12.2",
+    "jade": "~1.9.2",
+    "serve-favicon": "~2.2.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-file-include": "^0.13.7",
     "gulp-sass": "^2.0.4",
     "gulp-webserver": "^0.9.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
