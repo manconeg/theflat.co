@@ -1,5 +1,38 @@
 body {
-  font-size: 2em; }
+  font-size: 1em; }
   @media (min-width: 46.25em) {
     body {
       background-color: red; } }
+
+nav {
+  position: initial; }
+
+#nav {
+  flex-wrap: wrap;
+  margin: .1em;
+  padding: .1em; }
+
+#nav li {
+  flex: none; }
+
+#nav .link {
+  flex: none; }
+
+#logo {
+  flex: 1; }
+
+#logo img {
+  margin: 0;
+  height: 2em;
+  width: auto; }
+
+#nav .link {
+  font-size: 2em;
+  margin-left: .3em; }
+
+#page {
+  position: initial;
+  margin: 1em; }
+
+.page {
+  margin: .1em; }
